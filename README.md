@@ -28,14 +28,17 @@ The UCI HAR dataset is composed of the following files:
 
 ###2. Extract only the mean and std dev variables
 - Use select() to pull only variables containing ".mean." or ".std."
+
 ###3. Replace the activity number with the corresponding activity name
 - Merge the actitivy table with the "combined" table
 - Convert it to a tbl_df, and remove the activity number columns
+
 ###4. Use descriptive label names
 - Remove all period separators
 - Convert "X" to the more descriptive "XAxis" and so on
 - Convert all labels to the format of "firstSecondThirdFourth"
 - Remove duplicate works, like "BodyBody"
+
 ###5. Make a tidy dataset of just the means of activity-subject combinations
 - Split the dataset by subject and activity
 - Use sapply to run colMeans on the new split dataset
