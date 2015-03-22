@@ -20,26 +20,26 @@ The UCI HAR dataset is composed of the following files:
 
 #Approach used in run_analysis.R
 ###1. Read in and combine data
-  a. For all 8 datasets, read in as a table and convert to tbl_df so can be used in dplyr
-  b. Use rbind to combine the two x datasets, two y datasets, and two subject datasets
-  c. Pull the second colummn of the features dataset and add that as the column names in the combined X dataset
-  d. Set an appropriate column names for the combined y and combined subject datasets
-  e. Combine x, y and subject dataset with cbind and convert it to tbl_df
+- For all 8 datasets, read in as a table and convert to tbl_df so can be used in dplyr
+- Use rbind to combine the two x datasets, two y datasets, and two subject datasets
+- Pull the second colummn of the features dataset and add that as the column names in the combined X dataset
+- Set an appropriate column names for the combined y and combined subject datasets
+- Combine x, y and subject dataset with cbind and convert it to tbl_df
 ###2. Extract only the mean and std dev variables
-  a. Use select() to pull only variables containing ".mean." or ".std."
+- Use select() to pull only variables containing ".mean." or ".std."
 ###3. Replace the activity number with the corresponding activity name
-  a. Merge the actitivy table with the "combined" table
-  b. Convert it to a tbl_df, and remove the activity number columns
+- Merge the actitivy table with the "combined" table
+- Convert it to a tbl_df, and remove the activity number columns
 ###4. Use descriptive label names
-  a. Remove all period separators
-  b. Convert "X" to the more descriptive "XAxis" and so on
-  c. Convert all labels to the format of "firstSecondThirdFourth"
-  d. Remove duplicate works, like "BodyBody"
+- Remove all period separators
+- Convert "X" to the more descriptive "XAxis" and so on
+- Convert all labels to the format of "firstSecondThirdFourth"
+- Remove duplicate works, like "BodyBody"
 ###5. Make a tidy dataset of just the means of activity-subject combinations
-  a. Split the dataset by subject and activity
-  b. Use sapply to run colMeans on the new split dataset
-  c. Convert it back to a dataframe, and transpose it back to the original structure
-  d. Create a new column based on the row.names, and split it into two columns for 'Activity' and 'Subject'
-  e. Reorder the dataframe so Activity and Subject are the first two columns
-  f. Print it without the row.names
+- Split the dataset by subject and activity
+- Use sapply to run colMeans on the new split dataset
+- Convert it back to a dataframe, and transpose it back to the original structure
+- Create a new column based on the row.names, and split it into two columns for 'Activity' and 'Subject'
+- Reorder the dataframe so Activity and Subject are the first two columns
+- Print it without the row.names
 
