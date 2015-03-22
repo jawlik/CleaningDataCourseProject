@@ -25,6 +25,7 @@ The UCI HAR dataset is composed of the following files:
 - Pull the second colummn of the features dataset and add that as the column names in the combined X dataset
 - Set an appropriate column names for the combined y and combined subject datasets
 - Combine x, y and subject dataset with cbind and convert it to tbl_df
+
 ###2. Extract only the mean and std dev variables
 - Use select() to pull only variables containing ".mean." or ".std."
 ###3. Replace the activity number with the corresponding activity name
