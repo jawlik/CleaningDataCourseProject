@@ -8,7 +8,7 @@ There are 68 total variables in the tidyDF.txt dataset
 - Subject: a number from 1 to 30, corresponding to the test subject for the observation pertains
 - Activity: 1 of 6 specific activities being measured in this observation (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 
-66 time and frequency domain variables (only the means or std devs)
+For each of the 66 following time and frequencty domain variables (only the means or std devs), the value in tidyDF.txt represents the mean of all observations of this variable for a Subject-Activity combination.
 - tBodyAccMeanXAxis
 - tBodyAccMeanYAxis
 - tBodyAccMeanZAxis
