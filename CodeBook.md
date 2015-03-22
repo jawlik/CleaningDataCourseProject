@@ -1,8 +1,7 @@
 # Code book for jawlik's Course Project
 
 ## Explanation of Data
-The tidy data set tidyDf contains summary information from the UCI HAR datasets.  Specifically, for each subject-activity combination, 
-it calculated the mean of any mean or standard deviation variable (66 of the total 561 variables)
+The tidyDF.txt data set contains summary information from the UCI HAR dataset, which used Samsung smartphones to measure different time and frequency domains across 30 test subjects performing a variety of activities.  Specifically, the tidyDF.txt dataset contains the mean of any mean or standard deviation variable for each subject-activity combination (66 of the total 561 variables).
 
 ## Explanation of Variables
 There are 68 total variables in the tidyDF.txt dataset
